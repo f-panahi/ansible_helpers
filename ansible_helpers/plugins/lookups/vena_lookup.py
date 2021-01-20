@@ -25,9 +25,12 @@ class VenaLookup(VenaLookupBase):
         args_list contains the arguments passed to the lookup. To use this abstract class
         you must implement do_lookup() and we will pass the args passed to the lookup in order
         """
-
+        print(arg_list, kwargs)
         arg_list, extra_args = self.get_args(arg_list, kwargs)
-
+        print("<<<<<<<<<<<<<<<<<<<arg_list>>>>>>>>>>>>")
+        print(arg_list)
+        print("<<<<<<<<<<<<<<<<<<extra_args>>>>>>>>>>>>>>">)
+        print(kwargs)
         if not arg_list and not extra_args:
             if self.no_args:
                 #special case for lookups that don't accept any args, call once
