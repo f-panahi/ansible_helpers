@@ -29,7 +29,7 @@ class VenaLookup(VenaLookupBase):
         arg_list, extra_args = self.get_args(arg_list, kwargs)
         print("<<<<<<<<<<<<<<<<<<<arg_list>>>>>>>>>>>>")
         print(arg_list)
-        print("<<<<<<<<<<<<<<<<<<extra_args>>>>>>>>>>>>>>">)
+        print("<<<<<<<<<<<<<<<<<<extra_args>>>>>>>>>>>>>>")
         print(kwargs)
         if not arg_list and not extra_args:
             if self.no_args:
