@@ -19,11 +19,10 @@ class VenaLookupBase(LookupBase):
                 access_key, secret_key, *session_token = keys
                 kwargs["aws_access_key_id"] = access_key
                 kwargs["aws_secret_access_key"] = secret_key
-                print("<<<<<<<<<<<<<<<<<<<access keys>>>>>>>>>>>>>>>>>>>")
-                print('access_key')
-                print(access_key)
-                print('session_token')
-                print(session_token[0])
+                print("<<<<<<<<<<<<<<<<<<< access key, session token >>>>>>>>>>>>>>>>>>>")
+                print(access_key, session_token)
+                print('<<<<<<<<<<<<<<<<< session_token , session_token[0] length >>>>>>>>>>')
+                print(len(session_token), len(session_token[0]))
                 if session_token and session_token[0]:
                     print('session token is not empty')
                     kwargs["aws_session_token"] = session_token[0]
