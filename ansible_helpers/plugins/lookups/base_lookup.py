@@ -23,6 +23,7 @@ class VenaLookupBase(LookupBase):
                     print('<<<<<<<<<<<< session_token[0] length >>>>>>>>>>')
                     print(len(access_key), len(secret_key), len(session_token[0]))
                 if session_token and session_token[0]:
+                    print("session token is not empty")
                     kwargs["aws_session_token"] = session_token[0]
         except ValueError:
             raise AnsibleError("when providing keys, must provide required access credentials.")
