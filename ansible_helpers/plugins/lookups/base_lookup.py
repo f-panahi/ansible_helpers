@@ -21,7 +21,7 @@ class VenaLookupBase(LookupBase):
                 kwargs["aws_secret_access_key"] = secret_key
                 if session_token:
                     print('<<<<<<<<<<<< session_token[0] length >>>>>>>>>>')
-                    print(len(session_token[0]))
+                    print(len(access_key), len(secret_key), len(session_token[0]))
                 if session_token and session_token[0]:
                     kwargs["aws_session_token"] = session_token[0]
         except ValueError:
